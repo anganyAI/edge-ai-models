@@ -8,8 +8,10 @@ Pre-extracted AI models for the SttTestApp React Native application.
 |-------|---------|------|-------------|
 | **parakeet-offline** | v1 | ~640MB | NVIDIA Parakeet TDT offline STT model (int8) |
 | **zipformer-streaming** | v1 | ~405MB | Zipformer streaming STT model (French) |
+| **kroko-streaming-fr** | v1 | ~154MB | Kroko French streaming STT model (int8) |
 | **speaker** | v1 | ~38MB | 3D-Speaker embedding model for diarization |
 | **denoiser** | v1 | ~524KB | GTCRN audio denoiser |
+| **pyannote-segmentation** | v1 | ~1.5MB | Pyannote 3.0 multi-speaker segmentation (int8) |
 
 ## Directory Structure
 
@@ -28,12 +30,22 @@ stt-models/
 │       ├── joiner-epoch-29-avg-9-with-averaged-model.int8.onnx
 │       ├── tokens.txt
 │       └── README.md
+├── kroko-streaming-fr/
+│   └── v1/
+│       ├── encoder.int8.onnx
+│       ├── decoder.int8.onnx
+│       ├── joiner.int8.onnx
+│       ├── tokens.txt
+│       └── README.md
 ├── speaker/
 │   └── v1/
 │       └── 3dspeaker_speech_eres2net_base_sv_zh-cn_3dspeaker_16k.onnx
-└── denoiser/
+├── denoiser/
+│   └── v1/
+│       └── gtcrn_simple.onnx
+└── pyannote-segmentation/
     └── v1/
-        └── gtcrn_simple.onnx
+        └── model.int8.onnx
 ```
 
 ## Source
