@@ -6,7 +6,8 @@ Pre-extracted AI models for the SttTestApp React Native application.
 
 | Model | Version | Size | Description |
 |-------|---------|------|-------------|
-| **parakeet-offline** | v1 | ~640MB | NVIDIA Parakeet TDT offline STT model (int8) |
+| **parakeet-offline** | v1 | ~640MB | NVIDIA Parakeet TDT offline STT model (int8, transducer) |
+| **whisper-small** | v1 | ~357MB | OpenAI Whisper Small multilingual STT model (int8, encoder-decoder) |
 | **zipformer-streaming** | v1 | ~405MB | Zipformer streaming STT model (French) |
 | **kroko-streaming-fr** | v1 | ~154MB | Kroko French streaming STT model (int8) |
 | **speaker** | v1 | ~38MB | 3D-Speaker embedding model for diarization |
@@ -21,7 +22,12 @@ stt-models/
 │   └── v1/
 │       ├── encoder.int8.onnx
 │       ├── decoder.int8.onnx
-│       ├── joiner.int8.onnx
+│       ├── joiner.int8.onnx      # Transducer architecture
+│       └── tokens.txt
+├── whisper-small/
+│   └── v1/
+│       ├── encoder.int8.onnx
+│       ├── decoder.int8.onnx      # Encoder-decoder architecture (no joiner)
 │       └── tokens.txt
 ├── zipformer-streaming/
 │   └── v1/
