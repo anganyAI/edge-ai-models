@@ -13,6 +13,8 @@ Pre-extracted AI models for the SttTestApp React Native application.
 | **speaker** | v1 | ~38MB | 3D-Speaker embedding model for diarization |
 | **denoiser** | v1 | ~524KB | GTCRN audio denoiser |
 | **pyannote-segmentation** | v1 | ~1.5MB | Pyannote 3.0 multi-speaker segmentation (int8) |
+| **vad/silero** | v1 | ~2.2MB | Silero VAD v6 voice activity detection (8/16 kHz) |
+| **vad/ten** | v1 | ~324KB | TEN VAD real-time voice activity detection (int8 + full) |
 
 ## Directory Structure
 
@@ -49,9 +51,19 @@ stt-models/
 ├── denoiser/
 │   └── v1/
 │       └── gtcrn_simple.onnx
-└── pyannote-segmentation/
-    └── v1/
-        └── model.int8.onnx
+├── pyannote-segmentation/
+│   └── v1/
+│       └── model.int8.onnx
+└── vad/
+    ├── silero/
+    │   └── v1/
+    │       ├── silero_vad.onnx
+    │       └── README.md
+    └── ten/
+        └── v1/
+            ├── ten-vad.onnx
+            ├── ten-vad.int8.onnx
+            └── README.md
 ```
 
 ## Source
