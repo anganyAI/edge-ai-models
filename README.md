@@ -10,6 +10,7 @@ Pre-extracted AI models for the SttTestApp React Native application.
 | **whisper-small** | v1 | ~357MB | OpenAI Whisper Small multilingual STT model (int8, encoder-decoder) |
 | **zipformer-streaming** | v1 | ~405MB | Zipformer streaming STT model (French) |
 | **kroko-streaming-fr** | v1 | ~154MB | Kroko French streaming STT model (int8) |
+| **kroko-streaming-en** | v1 | ~154MB | Kroko English streaming STT model (int8) |
 | **speaker** | v1 | ~38MB | 3D-Speaker embedding model for diarization |
 | **denoiser** | v1 | ~524KB | GTCRN audio denoiser |
 | **pyannote-segmentation** | v1 | ~1.5MB | Pyannote 3.0 multi-speaker segmentation (int8) |
@@ -43,6 +44,13 @@ stt-models/
 │       ├── tokens.txt
 │       └── README.md
 ├── kroko-streaming-fr/
+│   └── v1/
+│       ├── encoder.int8.onnx
+│       ├── decoder.int8.onnx
+│       ├── joiner.int8.onnx
+│       ├── tokens.txt
+│       └── README.md
+├── kroko-streaming-en/
 │   └── v1/
 │       ├── encoder.int8.onnx
 │       ├── decoder.int8.onnx
