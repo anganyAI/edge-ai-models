@@ -18,7 +18,7 @@ Pre-extracted AI models for the SttTestApp React Native application.
 | **vad/ten** | v1 | ~324KB | TEN VAD real-time voice activity detection (int8 + full) |
 | **tts/piper-siwis-medium** | v1 | ~61MB | Piper French female TTS (VITS, 22 kHz, MIT) |
 | **tts/piper-mls-medium** | v1 | ~74MB | Piper French multi-speaker TTS (VITS, 22 kHz, MIT) |
-| **tts/piper-tom-medium** | v1 | ~61MB | Piper French male TTS (VITS, 22 kHz, MIT) |
+| **tts/piper-tom-medium** | v1 | ~61MB | Piper French male TTS (VITS, 44.1 kHz, MIT) |
 
 ## Directory Structure
 

@@ -10,7 +10,7 @@ French male TTS voice from [Piper](https://github.com/rhasspy/piper) (VITS archi
 
 - **Voice:** Male, single speaker
 - **Quality:** Medium
-- **Sample rate:** 22,050 Hz
+- **Sample rate:** 44,100 Hz
 - **Size:** ~61 MB
 
 ## Files
